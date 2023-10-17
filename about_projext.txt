@@ -1,0 +1,13 @@
+cors -
+ in app.js it is applied bcoz there was error in frontend at the time of fetching data from backend (api)
+
+const cors = require("cors");
+const corsOptions = {
+	origin: "http://localhost:3000",
+	credentials: true,
+};
+app.use(cors(corsOptions));
+
+above lines were added 
+
+--------------------------------------------------------------
